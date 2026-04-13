@@ -62,6 +62,10 @@ public class Chart {
      * 更新时间
      */
     private Date updateTime;
+    /**
+     * 任务状态
+     */
+    private String status;
 
     /**
      * 是否删除
