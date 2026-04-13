@@ -24,14 +24,14 @@ spring:
     url: jdbc:mysql://localhost:3306/yubi
     username: root
     password: 123456
-  # Redis 配置
-  # todo 需替换配置，然后取消注释
-#  redis:
-#    database: 1
-#    host: localhost
-#    port: 6379
-#    timeout: 5000
-#    password: 123456
+#   Redis 配置
+  data:
+    redis:
+      database: 1
+      host: 62.234.172.11
+      port: 6379
+      timeout: 5000
+      password: anything221B
   # Elasticsearch 配置
   # todo 需替换配置，然后取消注释
 #  elasticsearch:
