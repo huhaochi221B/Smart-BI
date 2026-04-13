@@ -13,8 +13,8 @@ import com.yupi.springbootinit.model.enums.FileUploadBizEnum;
 
 import java.io.File;
 import java.util.Arrays;
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletRequest;
 
 import com.yupi.springbootinit.service.UserService;
 import lombok.extern.slf4j.Slf4j;

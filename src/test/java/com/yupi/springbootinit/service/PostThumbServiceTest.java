@@ -1,6 +1,6 @@
 package com.yupi.springbootinit.service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import com.yupi.springbootinit.model.entity.User;
 import org.junit.jupiter.api.Assertions;
