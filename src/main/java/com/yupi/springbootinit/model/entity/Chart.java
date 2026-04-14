@@ -47,6 +47,10 @@ public class Chart {
      * 生成的图表结论
      */
     private String genResult;
+    /**
+     * 执行信息
+     */
+    private String execMessage;
 
     /**
      * 创建用户id
