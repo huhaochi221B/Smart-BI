@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class CommonConfig {
+public class ChatConfig {
     @Bean
     public ChatMemory chatMemory() {
         return new InMemoryChatMemory();
