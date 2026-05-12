@@ -1,6 +1,6 @@
 # Smart BI 后端系统
 
-基于 Spring Boot 3 + MyBatis-Plus + AI 的智能图表分析后端系统，支持用户上传数据、AI 自动生成图表和分析结论。
+基于 Spring Boot 3 + MyBatis-Plus + SpringAI 的智能图表分析后端系统，支持用户上传数据、AI 自动生成图表和分析结论。
 
 ## 📋 项目简介
 
