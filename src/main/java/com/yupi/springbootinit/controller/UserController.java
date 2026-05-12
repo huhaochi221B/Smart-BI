@@ -1,5 +1,6 @@
 package com.yupi.springbootinit.controller;
 
+import cn.hutool.core.lang.UUID;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yupi.springbootinit.annotation.AuthCheck;
 import com.yupi.springbootinit.common.BaseResponse;
@@ -99,6 +100,16 @@ public class UserController {
         if (StringUtils.isAnyBlank(userAccount, userPassword)) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
+        LoginUserVO loginUserVO = userService.userLogin(userAccount, userPassword, request);
+        return ResultUtils.success(loginUserVO);
+    }
+
+
+    @PostMapping("/guestLogin")
+    public BaseResponse<LoginUserVO> guestLogin(HttpServletRequest request, HttpServletResponse response) {
+        String userAccount =  UUID.randomUUID().toString();
+        String userPassword =  "12345678";
+        userService.userRegister(userAccount, userPassword, userPassword);
         LoginUserVO loginUserVO = userService.userLogin(userAccount, userPassword, request);
         return ResultUtils.success(loginUserVO);
     }
